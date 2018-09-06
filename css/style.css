@@ -1,0 +1,29 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+body.dragging::before {
+  content: "Drop the file(s) anywhere on this page";
+  position: fixed;
+  left: 0; width: 100%;
+  top: 0; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  background-color: rgba(255, 255, 0, .3);
+  pointer-events: none;
+}
+
+button, input {
+  font-family: inherit;
+}
+
+a {
+  color: blue;
+}
+
+
+canvas {
+  max-width: 100% !important;
+}
